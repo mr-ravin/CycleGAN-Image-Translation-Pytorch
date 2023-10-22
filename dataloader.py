@@ -6,18 +6,25 @@ from torch.utils.data import Dataset
 
 
 class CustomImageDataset(Dataset):
-    def __init__(self, transform=None, data_type="A", mode="train"):
-        self.path = "dataset/"+mode+"/"+data_type+"/"
-        self.filenames_list = glob.glob(self.path+"*.jpg")
+    def __init__(self, transform=None, mode="train"):
+        self.path_A = "dataset/"+mode+"/A/"
+        self.path_B = "dataset/"+mode+"/B/"
+        self.filenames_list_A = glob.glob(self.path_A+"*.jpg")
+        self.filenames_list_B = glob.glob(self.path_B+"*.jpg")
         self.transform = transform
 
     def __len__(self):
-        return len(self.filenames_list)
+        return len(self.filenames_list_A)
 
     def __getitem__(self, idx):
-        img_path = self.filenames_list[idx]
-        image = cv2.imread(img_path)
-        image = image/255.0
+        img_path_A = self.filenames_list_A[idx]
+        image_A = cv2.imread(img_path_A)
+        image_A = image_A/255.0
+        img_path_B = self.filenames_list_B[idx]
+        image_B = cv2.imread(img_path_B)
+        image_B = image_B/255.0
         if self.transform:
-            image = self.transform(image=image)["image"]
-        return image, img_path
+            image_A = self.transform(image=image_A)["image"]
+            image_B = self.transform(image=image_B)["image"]
+            
+        return image_A, image_B, img_path_A, img_path_B
