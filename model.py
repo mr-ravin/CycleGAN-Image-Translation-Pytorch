@@ -75,4 +75,4 @@ class Discriminator(nn.Module): # input image size: 3 x 128 x 128, here 3 repres
     def forward(self,x):
         x = self.resnet_model(x)
         output = self.sigmoid(x)
-        return x
+        return output
