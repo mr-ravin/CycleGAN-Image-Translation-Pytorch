@@ -1,4 +1,4 @@
-# CycleGAN: Image Translation using CycleGAN inPytorch
+# CycleGAN: Image Translation using CycleGAN in Pytorch
 
 - Image Translation Dataset: [Apple to Orange Dataset](http://efrosgans.eecs.berkeley.edu/cyclegan/datasets/)
 - Image Resolution: 128 x 128
