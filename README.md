@@ -6,13 +6,16 @@
 ### Directory Structure
 
 ```
-|--dataset
-|    |--train/
+|--dataset/
+|    |
+|    |--train/  # same no. of images are put in set A and set B
 |    |    |--A/
 |    |    |--B/
-|    |--test/
+|    |
+|    |--test/   # same no. of images are put in set A and set B
 |         |--A/
 |         |--B/
+|
 |--models/
 |--generated/
 |--models.py
