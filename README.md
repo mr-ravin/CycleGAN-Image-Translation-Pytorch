@@ -30,7 +30,7 @@
 
 ### Sample Outputs
 
-`sample_genereated.jpg` showcases `image translation in color images` each with resolution 128x128.
+`generation.jpg` showcases `image translation in color images` each with resolution 128x128.
 
 ![image](https://github.com/mr-ravin/CycleGAN-Image-Translation-Pytorch/blob/main/generation.jpg?raw=true)
 
