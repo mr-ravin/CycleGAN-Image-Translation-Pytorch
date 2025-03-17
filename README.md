@@ -1,8 +1,13 @@
 # CycleGAN: Image Translation using CycleGAN in Pytorch
-
+This repository contains a simple pytorch implementation of CycleGAN for Image Translation from Apple to Orange fruit.
 - Image Translation Dataset: [Apple to Orange Dataset](http://efrosgans.eecs.berkeley.edu/cyclegan/datasets/)
 - Image Resolution: 128 x 128
 
+## 🔧 Development Details
+- **👨‍💻 Developer:** [Ravin Kumar](https://mr-ravin.github.io)
+- **📂 GitHub Repository:** [https://github.com/mr-ravin/CycleGAN-Image-Translation-Pytorch](https://github.com/mr-ravin/CycleGAN-Image-Translation-Pytorch)
+
+----
 ### Directory Structure
 
 ```
